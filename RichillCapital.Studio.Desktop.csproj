@@ -3,9 +3,19 @@
   
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="coverage\**" />
+    <Compile Remove="Tests\**" />
+    <EmbeddedResource Remove="coverage\**" />
+    <EmbeddedResource Remove="Tests\**" />
+    <None Remove="coverage\**" />
+    <None Remove="Tests\**" />
+    <Page Remove="coverage\**" />
+    <Page Remove="Tests\**" />
+  </ItemGroup>
   
   <ItemGroup>
     <None Remove=".gitignore" />

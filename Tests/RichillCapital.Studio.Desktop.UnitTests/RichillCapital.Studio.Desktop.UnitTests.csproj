@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../Solution.Tests.props"/>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\RichillCapital.Studio.Desktop.csproj" />
+  </ItemGroup>
+
+</Project>
